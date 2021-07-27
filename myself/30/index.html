@@ -9,16 +9,53 @@
     <meta name="keywords" content="油油,yoniu,小智,coding,gridea,typecho主题,typecho,typecho最火主题" />
     <style>
         body{
-            padding: 1rem;
             color: #333;
+            line-height: 1.4;
+            background-color: #fff;
+            margin: 0 auto;
+        }
+        h1{
+            font-size: 1.7rem;
+        }
+        ul.post-list{
+            padding: 0;
+        }
+        li{
+            margin-bottom: .5rem;
+        }
+        ul.post-list li{
+            list-style: none;
+        }
+        #app{
+            display: flex;
+            flex-direction: column;
+            max-width: 1024px;
+            width: calc(100vw - 2rem);
+            min-height: 100vh;
+            margin: 0 auto;
+        }
+        code{
+            color: #f44336;
+            margin: 0 3px;
+        }
+        .imageLightbox{
+            display: block;
+            text-align: center;
         }
         img{
             max-width: 100%;
             border-radius: 5px;
             border: 1px solid #eee;
         }
+        #imagelightbox{
+            position: fixed;
+            z-index: 9999;
+            -ms-touch-action: none;
+            touch-action: none;
+            box-shadow: 0 0 40px rgba(0 0 0 / 30%)
+        }
         article{
-            max-width: 1200px;
+            flex: 1 1 auto;
         }
         a{
             color: #222;
@@ -28,18 +65,92 @@
             color: #ffaa4d;
             text-decoration: dashed underline;
         }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 100px;
+        }
+        .header .logo{
+            font-size: 2rem;
+            font-weight: bold;
+            transition: box-shadow .3s ease-in-out, color .3s ease-in-out;
+        }
+        .header .logo:hover{
+            box-shadow: inset 0 -1rem rgba(255 170 77 / 10%);
+            text-decoration: none;
+        }
+        .header .navigation{
+            display: flex;
+            align-items: center;
+        }
+        .header .navigation a{
+            display: block;
+            margin-left: 1rem;
+            transition: opacity .3s ease-in-out, color .3s ease-in-out;
+        }
+        .header .navigation a.current{
+            font-weight: bold;
+        }
+        .header .navigation a:hover{
+            text-decoration: none;
+        }
+        .header .navigation a:hover ~ a:not(:hover){
+            opacity: .5;
+        }
+        .post-list time{
+            font-size: .8rem;
+            border: .1rem solid #333;
+            border-left-width: .2rem;
+            border-right-width: .2rem;
+            background-color: #333;
+            color: #fff;
+            border-radius: 5px;
+            margin-right: .3rem;
+        }
+        .index-link{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .index-link a{
+            display: block;
+            margin-right: 1rem;
+        }
+        .post-links{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+        }
+        .links-title{
+            font-size: 1.7rem;
+            width: 100%;
+            text-align: center;
+            margin: 2rem 0;
+            font-weight: bold;
+        }
+        .links-title span{
+            box-shadow: inset 0 -.7rem rgba(255 170 77 / 10%);
+        }
+        .link-item{
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <ul><li>
-            <a href="/">首页</a>
-        </li><li>
-            <a href="/about">关于</a>
-        </li><li>
-            <a href="/links">友链</a>
-        </li></ul>
-    <article>
-    <h1>Twitter：Typecho轻博客主题</h1>
+    <div id="app">
+        <div class="header">
+            <a href="/" title="A website for myself." class="logo">油油</a>
+            <div class="navigation"><a href="/">首页</a><a href="/about/">关于</a><a href="/links/">友链</a></div>
+        </div>
+        <article>
+        <h1>Twitter：Typecho轻博客主题</h1>
 <p>2020-05-13</p>
 <h2>Twitter主题</h2>
 <p>Twitter主题是一款个人向的Typecho轻博客主题，由油油开发完成。</p>
@@ -126,7 +237,24 @@
 <li>售后主题交流群</li>
 </ul>
 
-    </article>
-    <footer>Copyright 2018-2021 all rights reserved.</footer>
+        </article>
+        <footer>
+            
+            <p>Copyright 2018-2021 all rights reserved. <a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank">粤ICP备18152975号-5</a></p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/osvaldasvalutis/imagelightbox.js/imagelightbox.min.js"></script>
+    <script>
+    $( function()
+    {
+        $("article img:not(.noImageLightBox)").each(function(i) {
+            if (!this.parentNode.href) {
+                $(this).wrap('<a class="imageLightbox" href="' + this.src + '" data-imagelightbox="a"></a>');
+            }
+        })
+        $( 'a.imageLightbox' ).imageLightbox();
+    });
+</script>
 </body>
 </html>
