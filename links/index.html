@@ -7,141 +7,9 @@
     <title>友链 - 油油 - Typecho Twitter 主题</title>
     <meta name="description" content="A website for myself." />
     <meta name="keywords" content="油油,yoniu,小智,coding,gridea,typecho主题,typecho,typecho最火主题" />
-    <style>
-        body{
-            color: #333;
-            line-height: 1.4;
-            background-color: #fff;
-            margin: 0 auto;
-        }
-        h1{
-            font-size: 1.7rem;
-        }
-        ul.post-list{
-            padding: 0;
-        }
-        li{
-            margin-bottom: .5rem;
-        }
-        ul.post-list li{
-            list-style: none;
-        }
-        #app{
-            display: flex;
-            flex-direction: column;
-            max-width: 1024px;
-            width: calc(100vw - 2rem);
-            min-height: 100vh;
-            margin: 0 auto;
-        }
-        code{
-            color: #f44336;
-            margin: 0 3px;
-        }
-        .imageLightbox{
-            display: block;
-            text-align: center;
-        }
-        img{
-            max-width: 100%;
-            border-radius: 5px;
-            border: 1px solid #eee;
-        }
-        #imagelightbox{
-            position: fixed;
-            z-index: 9999;
-            -ms-touch-action: none;
-            touch-action: none;
-            box-shadow: 0 0 40px rgba(0 0 0 / 30%)
-        }
-        article{
-            flex: 1 1 auto;
-        }
-        a{
-            color: #222;
-            text-decoration: none;
-        }
-        a:hover{
-            color: #ffaa4d;
-            text-decoration: dashed underline;
-        }
-        .header{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            min-height: 100px;
-        }
-        .header .logo{
-            font-size: 2rem;
-            font-weight: bold;
-            transition: box-shadow .3s ease-in-out, color .3s ease-in-out;
-        }
-        .header .logo:hover{
-            box-shadow: inset 0 -1rem rgba(255 170 77 / 10%);
-            text-decoration: none;
-        }
-        .header .navigation{
-            display: flex;
-            align-items: center;
-        }
-        .header .navigation a{
-            display: block;
-            margin-left: 1rem;
-            transition: opacity .3s ease-in-out, color .3s ease-in-out;
-        }
-        .header .navigation a.current{
-            font-weight: bold;
-        }
-        .header .navigation a:hover{
-            text-decoration: none;
-        }
-        .header .navigation a:hover ~ a:not(:hover){
-            opacity: .5;
-        }
-        .post-list time{
-            font-size: .8rem;
-            border: .1rem solid #333;
-            border-left-width: .2rem;
-            border-right-width: .2rem;
-            background-color: #333;
-            color: #fff;
-            border-radius: 5px;
-            margin-right: .3rem;
-        }
-        .index-link{
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        .index-link a{
-            display: block;
-            margin-right: 1rem;
-        }
-        .post-links{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
-        }
-        .links-title{
-            font-size: 1.7rem;
-            width: 100%;
-            text-align: center;
-            margin: 2rem 0;
-            font-weight: bold;
-        }
-        .links-title span{
-            box-shadow: inset 0 -.7rem rgba(255 170 77 / 10%);
-        }
-        .link-item{
-            width: 25%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            margin-bottom: 2rem;
-            text-align: center;
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery-bundle.min.css" />
+    <link type="text/css" rel="stylesheet" href="/assets/css/main.css" />
 </head>
 <body>
     <div id="app">
@@ -152,50 +20,50 @@
         <article>
         <div class="post-links">
     <div class="links-title"><span>内页友链</span></div><div class="link-item">
-        <a href="https://sumiler.com" title="微风轻轻起 夏日不再来。高中生九日的个人博客，用于记录生活的点点滴滴，同时写下自己的人生故事及内心思想" target="_blank">
+        <a href="https://sumiler.com" class="nopjax" title="微风轻轻起 夏日不再来。高中生九日的个人博客，用于记录生活的点点滴滴，同时写下自己的人生故事及内心思想" target="_blank">
             <img class="noImageLightBox" src="https://gravatar.helingqi.com/avatar/a35f5ef7a4bce3b7cfa6f538ffcae7aa?s=375" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://sumiler.com" title="微风轻轻起 夏日不再来。高中生九日的个人博客，用于记录生活的点点滴滴，同时写下自己的人生故事及内心思想" target="_blank">微风忆夏</a>
+        <a href="https://sumiler.com" class="nopjax" title="微风轻轻起 夏日不再来。高中生九日的个人博客，用于记录生活的点点滴滴，同时写下自己的人生故事及内心思想" target="_blank">微风忆夏</a>
     </div><div class="link-item">
-        <a href="http://www.mvvm.io/" title="做一个平凡、无聊且枯燥的人" target="_blank">
+        <a href="http://www.mvvm.io/" class="nopjax" title="做一个平凡、无聊且枯燥的人" target="_blank">
             <img class="noImageLightBox" src="https://q1.qlogo.cn/g?b=qq&amp;nk=2369710264&amp;s=640" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="http://www.mvvm.io/" title="做一个平凡、无聊且枯燥的人" target="_blank">浩瀚</a>
+        <a href="http://www.mvvm.io/" class="nopjax" title="做一个平凡、无聊且枯燥的人" target="_blank">浩瀚</a>
     </div><div class="link-item">
-        <a href="https://www.xiaojunkang.com/" title="一个沙雕的同学" target="_blank">
+        <a href="https://www.xiaojunkang.com/" class="nopjax" title="一个沙雕的同学" target="_blank">
             <img class="noImageLightBox" src="https://s3.jpg.cm/2020/05/13/A7258.gif" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://www.xiaojunkang.com/" title="一个沙雕的同学" target="_blank">肖同学</a>
+        <a href="https://www.xiaojunkang.com/" class="nopjax" title="一个沙雕的同学" target="_blank">肖同学</a>
     </div><div class="link-item">
-        <a href="https://beifeng.me/" title="记录着自己的生活时光" target="_blank">
+        <a href="https://beifeng.me/" class="nopjax" title="记录着自己的生活时光" target="_blank">
             <img class="noImageLightBox" src="https://q.qlogo.cn/g?b=qq&amp;nk=41777657&amp;s=100" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://beifeng.me/" title="记录着自己的生活时光" target="_blank">北枫</a>
+        <a href="https://beifeng.me/" class="nopjax" title="记录着自己的生活时光" target="_blank">北枫</a>
     </div><div class="link-item">
-        <a href="https://www.c0smx.com/" title="c0sMx&#39;s Blog" target="_blank">
+        <a href="https://www.c0smx.com/" class="nopjax" title="c0sMx&#39;s Blog" target="_blank">
             <img class="noImageLightBox" src="https://c0smx.lajiya.cn/archives/LOGO/c0sMx.png" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://www.c0smx.com/" title="c0sMx&#39;s Blog" target="_blank">c0sMx&#39;s Blog</a>
+        <a href="https://www.c0smx.com/" class="nopjax" title="c0sMx&#39;s Blog" target="_blank">c0sMx&#39;s Blog</a>
     </div><div class="link-item">
-        <a href="https://keepke.com/" title="保持思考与理性" target="_blank">
+        <a href="https://keepke.com/" class="nopjax" title="保持思考与理性" target="_blank">
             <img class="noImageLightBox" src="https://keepke.com/logo.png" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://keepke.com/" title="保持思考与理性" target="_blank">吾柯</a>
+        <a href="https://keepke.com/" class="nopjax" title="保持思考与理性" target="_blank">吾柯</a>
     </div><div class="link-item">
-        <a href="https://blog.truimo.com/" title="梦也有难过的时候，生活也是" target="_blank">
+        <a href="https://blog.truimo.com/" class="nopjax" title="梦也有难过的时候，生活也是" target="_blank">
             <img class="noImageLightBox" src="https://q1.qlogo.cn/g?b=qq&amp;nk=3201719830&amp;s=640" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://blog.truimo.com/" title="梦也有难过的时候，生活也是" target="_blank">浅小沫的博客</a>
+        <a href="https://blog.truimo.com/" class="nopjax" title="梦也有难过的时候，生活也是" target="_blank">浅小沫的博客</a>
     </div><div class="link-item">
-        <a href="http://blog.liy8.cn/" title="有你，且只有你，就够了。" target="_blank">
+        <a href="http://blog.liy8.cn/" class="nopjax" title="有你，且只有你，就够了。" target="_blank">
             <img class="noImageLightBox" src="https://q1.qlogo.cn/g?b=qq&amp;nk=47453459&amp;s=640" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="http://blog.liy8.cn/" title="有你，且只有你，就够了。" target="_blank">尤且</a>
+        <a href="http://blog.liy8.cn/" class="nopjax" title="有你，且只有你，就够了。" target="_blank">尤且</a>
     </div><div class="link-item">
-        <a href="https://www.rz.sb/Links.html" title="一个喜欢啥都瞎折腾的若志蛋蛋后，拖延症晚期患者。" target="_blank">
+        <a href="https://www.rz.sb/Links.html" class="nopjax" title="一个喜欢啥都瞎折腾的若志蛋蛋后，拖延症晚期患者。" target="_blank">
             <img class="noImageLightBox" src="https://q1.qlogo.cn/g?b=qq&amp;nk=80360650&amp;s=640" width="48px" height="48px" style="vertical-align: middle;margin-bottom: 1rem;" />
         </a>
-        <a href="https://www.rz.sb/Links.html" title="一个喜欢啥都瞎折腾的若志蛋蛋后，拖延症晚期患者。" target="_blank">若志随笔</a>
+        <a href="https://www.rz.sb/Links.html" class="nopjax" title="一个喜欢啥都瞎折腾的若志蛋蛋后，拖延症晚期患者。" target="_blank">若志随笔</a>
     </div></div>
         </article>
         <footer>
@@ -204,17 +72,9 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/osvaldasvalutis/imagelightbox.js/imagelightbox.min.js"></script>
-    <script>
-    $( function()
-    {
-        $("article img:not(.noImageLightBox)").each(function(i) {
-            if (!this.parentNode.href) {
-                $(this).wrap('<a class="imageLightbox" href="' + this.src + '" data-imagelightbox="a"></a>');
-            }
-        })
-        $( 'a.imageLightbox' ).imageLightbox();
-    });
-</script>
+    <script src="https://cdn.jsdelivr.net/gh/defunkt/jquery-pjax/jquery.pjax.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/lightgallery.umd.min.js"></script>
+    <script src="/assets/js/app.js"></script>
 </body>
 </html>
