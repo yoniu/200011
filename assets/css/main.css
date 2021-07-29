@@ -124,7 +124,79 @@ a:hover{
     margin-bottom: 2rem;
     text-align: center;
 }
-
+.photosets{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+.photosets>a{
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.photosets>a>img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0!important;
+    border-radius: 0;
+    transition: transform .3s ease-in-out;
+}
+.photosets-1>a{
+    width: 100%;
+    border-radius: 15px;
+}
+.photosets-1>a::before,
+.photosets-2>a::before,
+.photosets-3>a::before,
+.photosets-4>a::before{
+    content: '';
+    padding-top: 100%;
+    float: left;
+}
+.photosets-2>a{
+    width: 50%;
+}
+.photosets-2>a:nth-child(n){
+    border-radius: 15px 0 0 15px;
+}
+.photosets-2>a:nth-child(2n){
+    border-radius: 0 15px 15px 0;
+}
+.photosets-3>a{
+    width: 33.3%;
+}
+.photosets-3>a:nth-child(n){
+    border-radius: 15px 0 0 15px;
+}
+.photosets-3>a:nth-child(2n){
+    border-radius: 0;
+}
+.photosets-3>a:nth-child(3n){
+    border-radius: 0 15px 15px 0;
+}
+.photosets-4>a{
+    width: 50%;
+}
+.photosets-4>a:nth-child(n){
+    border-radius: 15px 0 0 0;
+}
+.photosets-4>a:nth-child(2n){
+    border-radius: 0 15px 0 0;
+}
+.photosets-4>a:nth-child(3n){
+    border-radius: 0 0 0 15px;
+}
+.photosets-4>a:nth-child(4n){
+    border-radius: 0 0 15px 0;
+}
 #nprogress .bar {
     background: #ffaa4d;
 }
