@@ -4,9 +4,11 @@ $( function()
     $(document).pjax('a:not(.imageLightbox):not(.nopjax)', 'article', {fragment:'article', timeout:6000});
     $(document).on('pjax:start', function() { $('article').fadeOut(); NProgress.start(); });
     $(document).on('pjax:end',   function() { $('article').fadeIn(); init(); NProgress.done();  });
-    $(".navigation a").click(function(){
+    $("a").click(function(){
         $(".navigation a.current").removeClass("current");
-        $(this).addClass("current");
+        if($(this).parent().hasClass("navigation")){
+            $(this).addClass("current");
+        }
     });
 });
 
@@ -38,5 +40,20 @@ function init(){
 		share: false,
 		showThumbByDefault: false,
 		autoplayControls: false
+    });
+    $(".owl-carousel").owlCarousel({
+        items: 2,
+        margin: 10,
+        dots: false,
+        nav: true,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            }
+        }
     });
 }
