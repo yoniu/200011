@@ -1,0 +1,24 @@
+{
+  "name": "200011",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoniu/200011.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yoniu/200011/issues"
+  },
+  "homepage": "https://github.com/yoniu/200011#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1"
+  }
+}

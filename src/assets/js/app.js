@@ -33,7 +33,6 @@ function init(){
             default:
                 $(this).addClass("photosets-3");
         }
-        console.log(count);
     });
     lightGallery(document.getElementsByTagName('article')[0], {
 		selector: '.post-imgLink',
