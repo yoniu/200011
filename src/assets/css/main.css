@@ -333,6 +333,24 @@ ul.post-list li, ul.theme-list li{
 .photosets-4>a:nth-child(4n){
     border-radius: 0 0 15px 0;
 }
+.post-comments{
+    max-width: 960px;
+    margin: 0 auto;
+    width: calc(100% - 1rem);
+}
+.v[data-class=v] .vwrap .vheader .vinput:focus {
+    border-bottom-color: #ffaa4d!important;
+}
+.v[data-class=v] .vbtn:active, .v[data-class=v] .vbtn:hover {
+    color: #ffaa4d!important;
+    border-color: #ffaa4d!important;
+}
+.v[data-class=v] .vicon.actived {
+    fill: #ffaa4d!important;
+}
+.v[data-class=v] .vwrap {
+    border-color: #f0f0f0!important;
+}
 #nprogress .bar {
     background: #ffaa4d;
 }

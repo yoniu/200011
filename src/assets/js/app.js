@@ -34,25 +34,38 @@ function init(){
                 $(this).addClass("photosets-3");
         }
     });
-    lightGallery(document.getElementsByTagName('article')[0], {
-		selector: '.post-imgLink',
-		share: false,
-		showThumbByDefault: false,
-		autoplayControls: false
-    });
-    $(".owl-carousel").owlCarousel({
-        items: 2,
-        margin: 10,
-        dots: false,
-        nav: true,
-        responsiveClass: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            1000: {
-                items: 2
+    if($(".post-imgLink").length > 0){
+        lightGallery(document.getElementsByTagName('article')[0], {
+            selector: '.post-imgLink',
+            share: false,
+            showThumbByDefault: false,
+            autoplayControls: false
+        });
+    }
+    if($(".owl-carousel").length > 0){
+        $(".owl-carousel").owlCarousel({
+            items: 2,
+            margin: 10,
+            dots: false,
+            nav: true,
+            responsiveClass: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                1000: {
+                    items: 2
+                }
             }
-        }
-    });
+        });
+    }
+    if($("#vcomments").length > 0){
+        new Valine({
+            el:'#vcomments',
+            appId: 'wo2ivx4hEwxl5ALC8gOkxFnB-gzGzoHsz',
+            appKey: 'y6CWB3NQESIh1pyIBx8GwQ9z',
+            requiredFields: ['nick', 'mail'],
+            recordIP: true
+        });
+    }
 }
