@@ -1,15 +1,15 @@
 $( function()
 {
     init();
-    $(document).pjax('a:not(.imageLightbox):not(.nopjax)', 'article', {fragment:'article', timeout:6000});
-    $(document).on('pjax:start', function() { $('article').fadeOut(); NProgress.start(); });
-    $(document).on('pjax:end',   function() { $('article').fadeIn(); init(); NProgress.done();  });
-    $("a").click(function(){
-        $(".navigation a.current").removeClass("current");
-        if($(this).parent().hasClass("navigation")){
-            $(this).addClass("current");
-        }
-    });
+    //$(document).pjax('a:not(.imageLightbox):not(.nopjax)', 'article', {fragment:'article', timeout:6000});
+    //$(document).on('pjax:start', function() { $('article').fadeOut(); NProgress.start(); });
+    //$(document).on('pjax:end',   function() { $('article').fadeIn(); init(); NProgress.done();  });
+    // $("a").click(function(){
+    //     $(".navigation a.current").removeClass("current");
+    //     if($(this).parent().hasClass("navigation")){
+    //         $(this).addClass("current");
+    //     }
+    // });
 });
 
 function init(){
