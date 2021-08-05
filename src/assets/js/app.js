@@ -60,12 +60,14 @@ function init(){
         });
     }
     if($("#vcomments").length > 0){
-        new Valine({
-            el:'#vcomments',
-            appId: 'wo2ivx4hEwxl5ALC8gOkxFnB-gzGzoHsz',
-            appKey: 'y6CWB3NQESIh1pyIBx8GwQ9z',
-            requiredFields: ['nick', 'mail'],
-            recordIP: true
-        });
+        setTimeout(function(){
+            new Valine({
+                el:'#vcomments',
+                appId: 'wo2ivx4hEwxl5ALC8gOkxFnB-gzGzoHsz',
+                appKey: 'y6CWB3NQESIh1pyIBx8GwQ9z',
+                requiredFields: ['nick', 'mail'],
+                recordIP: true
+            });
+        }, 1000);
     }
 }
