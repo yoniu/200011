@@ -59,15 +59,10 @@ function init(){
             }
         });
     }
-    if($("#vcomments").length > 0){
-        setTimeout(function(){
-            new Valine({
-                el:'#vcomments',
-                appId: 'wo2ivx4hEwxl5ALC8gOkxFnB-gzGzoHsz',
-                appKey: 'y6CWB3NQESIh1pyIBx8GwQ9z',
-                requiredFields: ['nick', 'mail'],
-                recordIP: true
-            });
-        }, 1000);
+    if($("#tcomment").length > 0){
+        twikoo.init({
+            envId: 'https://twikoo-kappa-khaki.vercel.app/',
+            el: '#tcomment'
+          })
     }
 }
