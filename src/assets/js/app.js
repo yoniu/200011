@@ -13,6 +13,14 @@ $( function()
 });
 
 function init(){
+    $(".logo").click(function(e){
+        if($(e.target).hasClass("icon")){
+            $('.header').toggleClass("show");
+            return false;
+        }else if(!$(e.target).hasClass("text")){
+            return false;
+        }
+    });
     $("article img:not(.noImageLightBox)").each(function(i) {
         if (!this.parentNode.href) {
             $(this).wrap('<a class="post-imgLink" href="' + this.src + '" data-caption="' + this.alt + '"></a>');
