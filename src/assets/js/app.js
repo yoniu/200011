@@ -63,6 +63,9 @@ function init(){
                 },
                 1000: {
                     items: 2
+                },
+                1600: {
+                    items: 3
                 }
             }
         });
