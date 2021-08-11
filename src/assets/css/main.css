@@ -242,6 +242,7 @@ ul.theme-list li{
 }
 .post-list-item{
     display: flex;
+    align-items: flex-start;
     padding: 1rem;
     background-color: #fff;
     border-radius: 5px;
@@ -620,6 +621,23 @@ footer{
     .post-items{
         border-radius: 0;
         padding: 3rem 1rem 1rem;
+    }
+    .post-list-title {
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: color .3s ease-in-out;
+    }
+    .post-icon {
+        font-size: .8rem;
+    }
+    .post-strip-content {
+        font-size: .9rem;
+    }
+    .post-list-item-image::after {
+        padding-top: 100%;
+    }
+    .post-list-item-image{
+        width: 100px;
     }
     .photosets{
         margin: 0;
