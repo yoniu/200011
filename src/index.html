@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rstacruz/nprogress/nprogress.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.1.8/css/lightgallery-bundle.min.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn.jsdelivr.net/gh/OwlCarousel2/OwlCarousel2@2.3.4/dist/assets/owl.carousel.min.css" />
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="/assets/css/main.css" />
     <script>
         var _hmt = _hmt || [];
@@ -93,6 +94,18 @@
             <h2>所有文章</h2>
             <div class="post-list-item">
                 <div class="post-list-item-left">
+                    <a href="/pen/20210818/" class="post-list-title"><span>Object.defineProperty</span></a>
+                    <div class="post-icon">
+                        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M552 912a138.56 138.56 0 0 1-98.56-40.8l-288-288A74.72 74.72 0 0 1 144 530.72V203.52A59.68 59.68 0 0 1 203.52 144h327.2a74.72 74.72 0 0 1 53.28 22.08l288 287.2a139.52 139.52 0 0 1 0 197.44L650.56 871.36A138.56 138.56 0 0 1 552 912zM203.52 192a11.52 11.52 0 0 0-11.52 11.52v327.2a27.2 27.2 0 0 0 8 19.36l288 288a91.52 91.52 0 0 0 129.28 0l220-221.28a91.84 91.84 0 0 0 0-129.6L550.08 200a27.2 27.2 0 0 0-19.36-8z" fill="#555"></path><path d="M360 432a72 72 0 1 1 72-72 72.16 72.16 0 0 1-72 72z m0-96a24 24 0 1 0 24 24 24 24 0 0 0-24-24z" fill="#555"></path></svg>
+                        <span>笔记</span>
+                        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M504 912A408 408 0 1 1 912 504 408.48 408.48 0 0 1 504 912z m0-768A360 360 0 1 0 864 504 360.32 360.32 0 0 0 504 144z" fill="#555"></path><path d="M648 608a23.84 23.84 0 0 1-9.76-2.08l-144-64A24 24 0 0 1 480 520v-224a24 24 0 0 1 48 0v208l129.76 57.6a24 24 0 0 1-9.76 46.4z" fill="#555"></path><path d="M504 560a40 40 0 1 1 40-40 40 40 0 0 1-40 40z m0-48a8 8 0 1 0 8 8 8 8 0 0 0-8-8z" fill="#555"></path></svg>
+                        <time>08-18</time>
+                    </div>
+                    <div class="post-strip-content">说明 Object.defineProperty() 方法会直接在一个对象上定义一个新属性，或者修改一个对象的现有属性，并返回此对象。 Object.defineProperty(obj, prop...</div>
+                </div>
+            </div>
+            <div class="post-list-item">
+                <div class="post-list-item-left">
                     <a href="/pen/20210810/" class="post-list-title"><span>20210810日报</span></a>
                     <div class="post-icon">
                         <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M552 912a138.56 138.56 0 0 1-98.56-40.8l-288-288A74.72 74.72 0 0 1 144 530.72V203.52A59.68 59.68 0 0 1 203.52 144h327.2a74.72 74.72 0 0 1 53.28 22.08l288 287.2a139.52 139.52 0 0 1 0 197.44L650.56 871.36A138.56 138.56 0 0 1 552 912zM203.52 192a11.52 11.52 0 0 0-11.52 11.52v327.2a27.2 27.2 0 0 0 8 19.36l288 288a91.52 91.52 0 0 0 129.28 0l220-221.28a91.84 91.84 0 0 0 0-129.6L550.08 200a27.2 27.2 0 0 0-19.36-8z" fill="#555"></path><path d="M360 432a72 72 0 1 1 72-72 72.16 72.16 0 0 1-72 72z m0-96a24 24 0 1 0 24 24 24 24 0 0 0-24-24z" fill="#555"></path></svg>
@@ -138,18 +151,6 @@
                     </div>
                     <div class="post-strip-content">听首刘瑞琦的歌 网站更新记录 新增幻灯片板块 修改内页样式 修改layouts ... 学习记录 划水的一天 ...</div>
                 </div>
-            </div>
-            <div class="post-list-item">
-                <div class="post-list-item-left">
-                    <a href="/pen/20210729/" class="post-list-title"><span>20210729日报</span></a>
-                    <div class="post-icon">
-                        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M552 912a138.56 138.56 0 0 1-98.56-40.8l-288-288A74.72 74.72 0 0 1 144 530.72V203.52A59.68 59.68 0 0 1 203.52 144h327.2a74.72 74.72 0 0 1 53.28 22.08l288 287.2a139.52 139.52 0 0 1 0 197.44L650.56 871.36A138.56 138.56 0 0 1 552 912zM203.52 192a11.52 11.52 0 0 0-11.52 11.52v327.2a27.2 27.2 0 0 0 8 19.36l288 288a91.52 91.52 0 0 0 129.28 0l220-221.28a91.84 91.84 0 0 0 0-129.6L550.08 200a27.2 27.2 0 0 0-19.36-8z" fill="#555"></path><path d="M360 432a72 72 0 1 1 72-72 72.16 72.16 0 0 1-72 72z m0-96a24 24 0 1 0 24 24 24 24 0 0 0-24-24z" fill="#555"></path></svg>
-                        <span>笔记</span>
-                        <svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="16" height="16"><path d="M504 912A408 408 0 1 1 912 504 408.48 408.48 0 0 1 504 912z m0-768A360 360 0 1 0 864 504 360.32 360.32 0 0 0 504 144z" fill="#555"></path><path d="M648 608a23.84 23.84 0 0 1-9.76-2.08l-144-64A24 24 0 0 1 480 520v-224a24 24 0 0 1 48 0v208l129.76 57.6a24 24 0 0 1-9.76 46.4z" fill="#555"></path><path d="M504 560a40 40 0 1 1 40-40 40 40 0 0 1-40 40z m0-48a8 8 0 1 0 8 8 8 8 0 0 0-8-8z" fill="#555"></path></svg>
-                        <time>07-29</time>
-                    </div>
-                    <div class="post-strip-content">听首aMei的歌 网站更新记录 新增文章内相册短代码 [photo sets]（实际无空格） 展示 学习记录 划水的一天 ...</div>
-                </div><a href="/pen/20210729/" class="post-list-item-image"><img src="https://s3.jpg.cm/2021/07/29/IViD0X.jpg" class="noImageLightBox"/></a>
             </div></div>
         <div class="post-pagination"><a href="javascript:;" class="post-pagination-pervious post-pagination-nofollow" rel="nofollow">上一页</a><a href="/1/" class="post-pagination-next">下一页</a></div>
     </div>
