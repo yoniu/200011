@@ -361,7 +361,7 @@ ul.theme-list li{
     position: relative;
     display: flex;
     align-items: center;
-    color: #ccc;
+    color: #000;
     z-index: 1;
 }
 .widget-bloger-content-avatar{
